@@ -3,28 +3,28 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = "$"
 var adminprefix = '&'
-const developers = ["541614978319384597","id"]
+const developers = ["535590684120580116","id"]
  
 client.on('message', message => {
     var p = message.mentions.members.first();
     var reason = message.content.split(" ").slice(2).join(' ');
     var log = message.guild.channels.find('name', 'warns-log');
     if(message.content.startsWith(`${prefix}warn`)){
-        if(!p) return message.reply(`**„‰‘‰ «·‘Œ’ «Ê·**`);
-        if(!reason) return message.reply(`**Õÿ ”»»**`);
-        if(!p.bannable) return message.reply(`**„ﬁœ— «⁄ÿÌ ÊÊ—‰ ·‘Œ’ „‰ «·«œ«—…**`);
-        reason = reason.replace('1', "**ﬂ «»… «·«Ê«„— »«·‘«  «·⁄«„**");
-        reason = reason.replace('2', "**»Ì⁄ «‘Ì«¡**");
-        reason = reason.replace('3', "**«· Õ–À ⁄‰ «·”Ì«”…**");
-        reason = reason.replace('4', "**«· Õ–À ⁄‰ «·œÌ‰ **");
-        reason = reason.replace('5', "**«· ÕœÀ ⁄‰ «·ÿ«∆›Ì…**");
-        reason = reason.replace('6', "**«·”»«„**");
-        reason = reason.replace('7', "**› Õ  –ﬂ—… „‰ œÊ‰ ”»»**");
-        reason = reason.replace('8', "**«·⁄‰’—Ì…**");
-        reason = reason.replace('9', "**⁄œ„ «·«Õ —«„**");
-        reason = reason.replace('10', "**‰‘— »«·⁄«„**");
+        if(!p) return message.reply(`**√£√§√î√§ √á√°√î√é√ï √á√¶√°**`);
+        if(!reason) return message.reply(`**√ç√ò √ì√à√à**`);
+        if(!p.bannable) return message.reply(`**√£√û√è√ë √á√ö√ò√≠ √¶√¶√ë√§ √°√î√é√ï √£√§ √á√°√á√è√á√ë√â**`);
+        reason = reason.replace('1', "**√ü√ä√á√à√â √á√°√á√¶√á√£√ë √à√á√°√î√á√ä √á√°√ö√á√£**");
+        reason = reason.replace('2', "**√à√≠√ö √á√î√≠√á√Å**");
+        reason = reason.replace('3', "**√á√°√ä√ç√ê√ã √ö√§ √á√°√ì√≠√á√ì√â**");
+        reason = reason.replace('4', "**√á√°√ä√ç√ê√ã √ö√§ √á√°√è√≠√§ **");
+        reason = reason.replace('5', "**√á√°√ä√ç√è√ã √ö√§ √á√°√ò√á√Ü√ù√≠√â**");
+        reason = reason.replace('6', "**√á√°√ì√à√á√£**");
+        reason = reason.replace('7', "**√ù√ä√ç √ä√ê√ü√ë√â √£√§ √è√¶√§ √ì√à√à**");
+        reason = reason.replace('8', "**√á√°√ö√§√ï√ë√≠√â**");
+        reason = reason.replace('9', "**√ö√è√£ √á√°√á√ç√ä√ë√á√£**");
+        reason = reason.replace('10', "**√§√î√ë √à√á√°√ö√á√£**");
         var embed = new Discord.RichEmbed()
-        .setAuthor(` „ «· Õ–Ì—`)
+        .setAuthor(`√ä√£ √á√°√ä√ç√ê√≠√ë`)
         .addField(`Name ?`, `<@${p.id}>`)
         .addField(`By ?`, `<@${message.author.id}>`)
         .addField(`Reason ?`, reason)
@@ -43,14 +43,14 @@ client.on('message', message => {
     var reason = message.content.split(" ").slice(2).join(' ');
     var log = message.guild.channels.find('name', 'ban-log');
     if(message.content.startsWith(`${prefix}ban`)){
-        if(!p) return message.reply(`**„‰‘‰ «·‘Œ’**`);
-        if(!reason) return message.reply(`**Õÿ ”»»**`);
-        if(!p.bannable) return message.reply(`**„ «ﬁœ— «» œ ‘Œ’ „‰ «·” «›**`);
-        reason = reason.replace('1', "**‰‘— ›Ì «·Œ«’**");
-        reason = reason.replace('2', "**«”„ €Ì— ·«∆ﬁ**");
-        reason = reason.replace('3', "**’Ê—Â €Ì— ·«∆ﬁÂ**");
-        reason = reason.replace('4', "**«”„ €Ì— ·¬∆ﬁ**");
-        reason = reason.replace('5', "**”» «·«Â·**");
+        if(!p) return message.reply(`**√£√§√î√§ √á√°√î√é√ï**`);
+        if(!reason) return message.reply(`**√ç√ò √ì√à√à**`);
+        if(!p.bannable) return message.reply(`**√£ √á√û√è√ë √á√à√ä√è √î√é√ï √£√§ √á√°√ì√ä√á√ù**`);
+        reason = reason.replace('1', "**√§√î√ë √ù√≠ √á√°√é√á√ï**");
+        reason = reason.replace('2', "**√á√ì√£ √õ√≠√ë √°√á√Ü√û**");
+        reason = reason.replace('3', "**√ï√¶√ë√• √õ√≠√ë √°√á√Ü√û√•**");
+        reason = reason.replace('4', "**√á√ì√£ √õ√≠√ë √°√Ç√Ü√û**");
+        reason = reason.replace('5', "**√ì√à √á√°√á√•√°**");
         var embed = new Discord.RichEmbed()
         .setAuthor(`User Banned!`)
         .addField(`Name ?`, `<@${p.id}>`)
@@ -106,28 +106,28 @@ client.on('message',async message => {
   var gMembers;
   var filter = m => m.author.id === message.author.id;
   if(message.content.startsWith(prefix + "giveaway")) {
-     //return message.channel.send(':heavy_multiplication_x:| **Â–« «·«„— „⁄ÿ· Õ«·Ì«.. ``Õ«Ê· ›Ì Êﬁ  ·«Õﬁ``**');
-    if(!message.guild.member(message.author).hasPermission('MANAGE_GUILD')) return message.channel.send(':heavy_multiplication_x:| **ÌÃ» √‰ ÌﬂÊ‰ ·œÌﬂ Œ«’Ì… «· ⁄œÌ· ⁄·Ï «·”Ì—›—**');
-    message.channel.send(`:eight_pointed_black_star:| **„‰ ›÷·ﬂ «ﬂ » «”„ «·—Ê„**`).then(msgg => {
+     //return message.channel.send(':heavy_multiplication_x:| **√•√ê√á √á√°√á√£√ë √£√ö√ò√° √ç√á√°√≠√á.. ``√ç√á√¶√° √ù√≠ √¶√û√ä √°√á√ç√û``**');
+    if(!message.guild.member(message.author).hasPermission('MANAGE_GUILD')) return message.channel.send(':heavy_multiplication_x:| **√≠√å√à √É√§ √≠√ü√¶√§ √°√è√≠√ü √é√á√ï√≠√â √á√°√ä√ö√è√≠√° √ö√°√¨ √á√°√ì√≠√ë√ù√ë**');
+    message.channel.send(`:eight_pointed_black_star:| **√£√§ √ù√ñ√°√ü √á√ü√ä√à √á√ì√£ √á√°√ë√¶√£**`).then(msgg => {
       message.channel.awaitMessages(filter, {
         max: 1,
         time: 20000,
         errors: ['time']
       }).then(collected => {
         let room = message.guild.channels.find('name', collected.first().content);
-        if(!room) return message.channel.send(':heavy_multiplication_x:| **·„ «ﬁœ— ⁄·Ï «ÌÃ«œ «·—Ê„ «·„ÿ·Ê»**');
+        if(!room) return message.channel.send(':heavy_multiplication_x:| **√°√£ √á√û√è√ë √ö√°√¨ √á√≠√å√á√è √á√°√ë√¶√£ √á√°√£√ò√°√¶√à**');
         room = collected.first().content;
         collected.first().delete();
-        msgg.edit(':eight_pointed_black_star:| **«ﬂ » „œ… «·ﬁÌ› «Ê«Ì »«·œﬁ«∆ﬁ , „À«· : 60**').then(msg => {
+        msgg.edit(':eight_pointed_black_star:| **√á√ü√ä√à √£√è√â √á√°√û√≠√ù √á√¶√á√≠ √à√á√°√è√û√á√Ü√û , √£√ã√á√° : 60**').then(msg => {
           message.channel.awaitMessages(filter, {
             max: 1,
             time: 20000,
             errors: ['time']
           }).then(collected => {
-            if(isNaN(collected.first().content)) return message.channel.send(':heavy_multiplication_x:| **ÌÃ» ⁄·Ìﬂ «‰  Õœœ Êﬁ  “„‰Ì ’ÕÌÕ.. ``ÌÃ» ⁄·Ìﬂ «⁄«œ… ﬂ «»… «·«„—``**');
+            if(isNaN(collected.first().content)) return message.channel.send(':heavy_multiplication_x:| **√≠√å√à √ö√°√≠√ü √á√§ √ä√ç√è√è √¶√û√ä √í√£√§√≠ √ï√ç√≠√ç.. ``√≠√å√à √ö√°√≠√ü √á√ö√á√è√â √ü√ä√á√à√â √á√°√á√£√ë``**');
             duration = collected.first().content * 60000;
             collected.first().delete();
-            msgg.edit(':eight_pointed_black_star:| **Ê«ŒÌ—« «ﬂ » ⁄·Ï „«–«  —Ìœ «·ﬁÌ› «Ê«Ì**').then(msg => {
+            msgg.edit(':eight_pointed_black_star:| **√¶√á√é√≠√ë√á √á√ü√ä√à √ö√°√¨ √£√á√ê√á √ä√ë√≠√è √á√°√û√≠√ù √á√¶√á√≠**').then(msg => {
               message.channel.awaitMessages(filter, {
                 max: 1,
                 time: 20000,
@@ -139,7 +139,7 @@ client.on('message',async message => {
                   let giveEmbed = new Discord.RichEmbed()
                   .setAuthor(message.guild.name, message.guild.iconURL)
                   .setTitle(title)
-                  .setDescription(`«·„œ… : ${duration / 60000} œﬁ«∆ﬁ`)
+                  .setDescription(`√á√°√£√è√â : ${duration / 60000} √è√û√á√Ü√û`)
                   .setFooter(message.author.username, message.author.avatarURL);
                   message.guild.channels.find('name', room).send(giveEmbed).then(m => {
                      let re = m.react('??');
@@ -147,18 +147,18 @@ client.on('message',async message => {
                        let users = m.reactions.get("??").users;
                        let list = users.array().filter(u => u.id !== m.author.id);
                        let gFilter = list[Math.floor(Math.random() * list.length) + 0];
-                         if(users.size === 1) gFilter = '**·„ Ì „ «· ÕœÌœ**';
+                         if(users.size === 1) gFilter = '**√°√£ √≠√ä√£ √á√°√ä√ç√è√≠√è**';
                        let endEmbed = new Discord.RichEmbed()
                        .setAuthor(message.author.username, message.author.avatarURL)
                        .setTitle(title)
-                       .addField('«‰ ÂÏ «·ﬁÌ› «Ê«Ì !',`«·›«∆“ ÂÊ : ${gFilter}`)
+                       .addField('√á√§√ä√•√¨ √á√°√û√≠√ù √á√¶√á√≠ !',`√á√°√ù√á√Ü√í √•√¶ : ${gFilter}`)
                        .setFooter(message.guild.name, message.guild.iconURL);
                        m.edit(endEmbed);
                      },duration);
                    });
-                  msgg.edit(`:heavy_check_mark:| ** „ «⁄œ«œ «·ﬁÌ› «Ê«Ì**`);
+                  msgg.edit(`:heavy_check_mark:| **√ä√£ √á√ö√è√á√è √á√°√û√≠√ù √á√¶√á√≠**`);
                 } catch(e) {
-                  msgg.edit(`:heavy_multiplication_x:| **·„ «ﬁœ— ⁄·Ï «⁄œ«œ «·ﬁÌ› «Ê«Ì »”»» ‰ﬁ’ «·Œ’«∆’**`);
+                  msgg.edit(`:heavy_multiplication_x:| **√°√£ √á√û√è√ë √ö√°√¨ √á√ö√è√á√è √á√°√û√≠√ù √á√¶√á√≠ √à√ì√à√à √§√û√ï √á√°√é√ï√á√Ü√ï**`);
                   console.log(e);
                 }
               });
@@ -195,9 +195,9 @@ if(message.content.startsWith( prefix + 'invite')) {
             var inviteInfo = new Discord.RichEmbed()
             .setTitle(`:incoming_envelope: **[INVITE INFO]** ${Username}`)
             .setThumbnail(client.user.avatarURL)
-            .addField('**«·œ⁄Ê« **', `**?** [ ‘Œ’ **${Number(inviteCount)}** ]`)
-            .addField('** „ «·«‰÷„«„ ··”Ì—›— „‰**', `**?** [ ÌÊ„ **${daysJoined.toFixed(0)}** ]`)
-            .addField('**—«»ÿ œ⁄Ê… «·«‰÷„«„**', `**?** [ **https://discord.gg/${inviteCode || 'Zm2U6we'}** ]`)
+            .addField('**√á√°√è√ö√¶√á√ä**', `**?** [ √î√é√ï **${Number(inviteCount)}** ]`)
+            .addField('**√ä√£ √á√°√á√§√ñ√£√á√£ √°√°√ì√≠√ë√ù√ë √£√§**', `**?** [ √≠√¶√£ **${daysJoined.toFixed(0)}** ]`)
+            .addField('**√ë√á√à√ò √è√ö√¶√â √á√°√á√§√ñ√£√á√£**', `**?** [ **https://discord.gg/${inviteCode || 'Zm2U6we'}** ]`)
             .setColor('ORANGE')
             .setTimestamp()
             .setFooter(Tag, Avatar)
@@ -255,8 +255,8 @@ client.on("raw", (packet)=> {
 });
 client.on("reachLimit", (limit)=> {
   let log = limit.guild.channels.find( channel => channel.name === "security-log");
-  log.send(limit.user.username+"\** ”Ì—›— »Ì Âﬂ— ! ** ");
-  limit.guild.owner.send(limit.user.username+"\** ”Ì—›—ﬂ »Ì Âﬂ— ! ** ")
+  log.send(limit.user.username+"\** √ì√≠√ë√ù√ë √à√≠√ä√•√ü√ë ! ** ");
+  limit.guild.owner.send(limit.user.username+"\** √ì√≠√ë√ù√ë√ü √à√≠√ä√•√ü√ë ! ** ")
   limit.member.roles.map(role => {
     limit.member.removeRole(role.id)
     .catch(log.send)
@@ -269,10 +269,10 @@ client.on('message', message => {
         let support = message.guild.roles.find("name","Support Team");
         let ticketsStation = message.guild.channels.find("name", "TICKETS.");
         if(!args) {
-            return message.channel.send('**«·„—ÃÊ ﬂ ¬»… „Ê÷Ê⁄ ·· –ﬂ—…**');
+            return message.channel.send('**√á√°√£√ë√å√¶ √ü√ä√Ç√à√â √£√¶√ñ√¶√ö √°√°√ä√ê√ü√ë√â**');
         };
                 if(!support) {
-                    return message.channel.send('** „‰ ›÷·ﬂ ﬁ„ »≈‰‘«¡ — »… «”„Â« `Support Team` **');
+                    return message.channel.send('** √£√§ √ù√ñ√°√ü √û√£ √à√Ö√§√î√á√Å √ë√ä√à√â √á√ì√£√•√á `Support Team` **');
                 };
             if(!ticketsStation) {
                 message.guild.createChannel("TICKETS.", "category");
@@ -311,7 +311,7 @@ client.on('message', message => {
             return;
         };  
                 let embed = new Discord.RichEmbed()
-                    .setAuthor("√⁄œ «·«„— ° ·œÌﬂ 20 À¬‰Ì…")
+                    .setAuthor("√É√ö√è √á√°√á√£√ë ¬° √°√è√≠√ü 20 √ã√Ç√§√≠√â")
                     .setColor("RANDOM");
                     message.channel.sendEmbed(embed) .then(codes => {
  
@@ -326,7 +326,7 @@ client.on('message', message => {
                             message.channel.delete();
                         }) .catch(() => {
                             codes.delete()
-                                .then(message.channel.send('** „ ≈·€«¡ «·⁄„·Ì…**')) .then((c) => {
+                                .then(message.channel.send('**√ä√£ √Ö√°√õ√á√Å √á√°√ö√£√°√≠√â**')) .then((c) => {
                                     c.delete(4000);
                                 })
                                    
@@ -345,7 +345,7 @@ client.on("guildMemberAdd", member => {
   client.channels.find('id', '563863609441124363').send(` **Welcome To __Te__st Server**  `)
 }); 
 /////////
-client.login(' Êﬂ‰');
+client.login('√ä√¶√ü√§');
 RAW Paste Data
 
  
@@ -357,7 +357,7 @@ create new paste  /  dealsnew!  /  syntax languages  /  archive  /  faq  /  tool
 privacy statement  /  cookies policy  /  terms of service  /  security disclosure  /  dmca  /  contact 
 
 By using Pastebin.com you agree to our cookies policy to enhance your experience. 
-Site design & logo © 2018 Pastebin; user contributions (pastes) licensed under cc by-sa 3.0 -- Dedicated Server Hosting by Steadfast 
+Site design & logo ¬© 2018 Pastebin; user contributions (pastes) licensed under cc by-sa 3.0 -- Dedicated Server Hosting by Steadfast 
   
 
 
@@ -468,21 +468,21 @@ client.on('message', message => {
     var reason = message.content.split(" ").slice(2).join(' ');
     var log = message.guild.channels.find('name', 'warns-log');
     if(message.content.startsWith(`${prefix}warn`)){
-        if(!p) return message.reply(`**„‰‘‰ «·‘Œ’ «Ê·**`);
-        if(!reason) return message.reply(`**Õÿ ”»»**`);
-        if(!p.bannable) return message.reply(`**„ﬁœ— «⁄ÿÌ ÊÊ—‰ ·‘Œ’ „‰ «·«œ«—…**`);
-        reason = reason.replace('1', "**ﬂ «»… «·«Ê«„— »«·‘«  «·⁄«„**");
-        reason = reason.replace('2', "**»Ì⁄ «‘Ì«¡**");
-        reason = reason.replace('3', "**«· Õ–À ⁄‰ «·”Ì«”…**");
-        reason = reason.replace('4', "**«· Õ–À ⁄‰ «·œÌ‰ **");
-        reason = reason.replace('5', "**«· ÕœÀ ⁄‰ «·ÿ«∆›Ì…**");
-        reason = reason.replace('6', "**«·”»«„**");
-        reason = reason.replace('7', "**› Õ  –ﬂ—… „‰ œÊ‰ ”»»**");
-        reason = reason.replace('8', "**«·⁄‰’—Ì…**");
-        reason = reason.replace('9', "**⁄œ„ «·«Õ —«„**");
-        reason = reason.replace('10', "**‰‘— »«·⁄«„**");
+        if(!p) return message.reply(`**√£√§√î√§ √á√°√î√é√ï √á√¶√°**`);
+        if(!reason) return message.reply(`**√ç√ò √ì√à√à**`);
+        if(!p.bannable) return message.reply(`**√£√û√è√ë √á√ö√ò√≠ √¶√¶√ë√§ √°√î√é√ï √£√§ √á√°√á√è√á√ë√â**`);
+        reason = reason.replace('1', "**√ü√ä√á√à√â √á√°√á√¶√á√£√ë √à√á√°√î√á√ä √á√°√ö√á√£**");
+        reason = reason.replace('2', "**√à√≠√ö √á√î√≠√á√Å**");
+        reason = reason.replace('3', "**√á√°√ä√ç√ê√ã √ö√§ √á√°√ì√≠√á√ì√â**");
+        reason = reason.replace('4', "**√á√°√ä√ç√ê√ã √ö√§ √á√°√è√≠√§ **");
+        reason = reason.replace('5', "**√á√°√ä√ç√è√ã √ö√§ √á√°√ò√á√Ü√ù√≠√â**");
+        reason = reason.replace('6', "**√á√°√ì√à√á√£**");
+        reason = reason.replace('7', "**√ù√ä√ç √ä√ê√ü√ë√â √£√§ √è√¶√§ √ì√à√à**");
+        reason = reason.replace('8', "**√á√°√ö√§√ï√ë√≠√â**");
+        reason = reason.replace('9', "**√ö√è√£ √á√°√á√ç√ä√ë√á√£**");
+        reason = reason.replace('10', "**√§√î√ë √à√á√°√ö√á√£**");
         var embed = new Discord.RichEmbed()
-        .setAuthor(` „ «· Õ–Ì—`)
+        .setAuthor(`√ä√£ √á√°√ä√ç√ê√≠√ë`)
         .addField(`Name ?`, `<@${p.id}>`)
         .addField(`By ?`, `<@${message.author.id}>`)
         .addField(`Reason ?`, reason)
@@ -501,14 +501,14 @@ client.on('message', message => {
     var reason = message.content.split(" ").slice(2).join(' ');
     var log = message.guild.channels.find('name', 'ban-log');
     if(message.content.startsWith(`${prefix}ban`)){
-        if(!p) return message.reply(`**„‰‘‰ «·‘Œ’**`);
-        if(!reason) return message.reply(`**Õÿ ”»»**`);
-        if(!p.bannable) return message.reply(`**„ «ﬁœ— «» œ ‘Œ’ „‰ «·” «›**`);
-        reason = reason.replace('1', "**‰‘— ›Ì «·Œ«’**");
-        reason = reason.replace('2', "**«”„ €Ì— ·«∆ﬁ**");
-        reason = reason.replace('3', "**’Ê—Â €Ì— ·«∆ﬁÂ**");
-        reason = reason.replace('4', "**«”„ €Ì— ·¬∆ﬁ**");
-        reason = reason.replace('5', "**”» «·«Â·**");
+        if(!p) return message.reply(`**√£√§√î√§ √á√°√î√é√ï**`);
+        if(!reason) return message.reply(`**√ç√ò √ì√à√à**`);
+        if(!p.bannable) return message.reply(`**√£ √á√û√è√ë √á√à√ä√è √î√é√ï √£√§ √á√°√ì√ä√á√ù**`);
+        reason = reason.replace('1', "**√§√î√ë √ù√≠ √á√°√é√á√ï**");
+        reason = reason.replace('2', "**√á√ì√£ √õ√≠√ë √°√á√Ü√û**");
+        reason = reason.replace('3', "**√ï√¶√ë√• √õ√≠√ë √°√á√Ü√û√•**");
+        reason = reason.replace('4', "**√á√ì√£ √õ√≠√ë √°√Ç√Ü√û**");
+        reason = reason.replace('5', "**√ì√à √á√°√á√•√°**");
         var embed = new Discord.RichEmbed()
         .setAuthor(`User Banned!`)
         .addField(`Name ?`, `<@${p.id}>`)
@@ -564,28 +564,28 @@ client.on('message',async message => {
   var gMembers;
   var filter = m => m.author.id === message.author.id;
   if(message.content.startsWith(prefix + "giveaway")) {
-     //return message.channel.send(':heavy_multiplication_x:| **Â–« «·«„— „⁄ÿ· Õ«·Ì«.. ``Õ«Ê· ›Ì Êﬁ  ·«Õﬁ``**');
-    if(!message.guild.member(message.author).hasPermission('MANAGE_GUILD')) return message.channel.send(':heavy_multiplication_x:| **ÌÃ» √‰ ÌﬂÊ‰ ·œÌﬂ Œ«’Ì… «· ⁄œÌ· ⁄·Ï «·”Ì—›—**');
-    message.channel.send(`:eight_pointed_black_star:| **„‰ ›÷·ﬂ «ﬂ » «”„ «·—Ê„**`).then(msgg => {
+     //return message.channel.send(':heavy_multiplication_x:| **√•√ê√á √á√°√á√£√ë √£√ö√ò√° √ç√á√°√≠√á.. ``√ç√á√¶√° √ù√≠ √¶√û√ä √°√á√ç√û``**');
+    if(!message.guild.member(message.author).hasPermission('MANAGE_GUILD')) return message.channel.send(':heavy_multiplication_x:| **√≠√å√à √É√§ √≠√ü√¶√§ √°√è√≠√ü √é√á√ï√≠√â √á√°√ä√ö√è√≠√° √ö√°√¨ √á√°√ì√≠√ë√ù√ë**');
+    message.channel.send(`:eight_pointed_black_star:| **√£√§ √ù√ñ√°√ü √á√ü√ä√à √á√ì√£ √á√°√ë√¶√£**`).then(msgg => {
       message.channel.awaitMessages(filter, {
         max: 1,
         time: 20000,
         errors: ['time']
       }).then(collected => {
         let room = message.guild.channels.find('name', collected.first().content);
-        if(!room) return message.channel.send(':heavy_multiplication_x:| **·„ «ﬁœ— ⁄·Ï «ÌÃ«œ «·—Ê„ «·„ÿ·Ê»**');
+        if(!room) return message.channel.send(':heavy_multiplication_x:| **√°√£ √á√û√è√ë √ö√°√¨ √á√≠√å√á√è √á√°√ë√¶√£ √á√°√£√ò√°√¶√à**');
         room = collected.first().content;
         collected.first().delete();
-        msgg.edit(':eight_pointed_black_star:| **«ﬂ » „œ… «·ﬁÌ› «Ê«Ì »«·œﬁ«∆ﬁ , „À«· : 60**').then(msg => {
+        msgg.edit(':eight_pointed_black_star:| **√á√ü√ä√à √£√è√â √á√°√û√≠√ù √á√¶√á√≠ √à√á√°√è√û√á√Ü√û , √£√ã√á√° : 60**').then(msg => {
           message.channel.awaitMessages(filter, {
             max: 1,
             time: 20000,
             errors: ['time']
           }).then(collected => {
-            if(isNaN(collected.first().content)) return message.channel.send(':heavy_multiplication_x:| **ÌÃ» ⁄·Ìﬂ «‰  Õœœ Êﬁ  “„‰Ì ’ÕÌÕ.. ``ÌÃ» ⁄·Ìﬂ «⁄«œ… ﬂ «»… «·«„—``**');
+            if(isNaN(collected.first().content)) return message.channel.send(':heavy_multiplication_x:| **√≠√å√à √ö√°√≠√ü √á√§ √ä√ç√è√è √¶√û√ä √í√£√§√≠ √ï√ç√≠√ç.. ``√≠√å√à √ö√°√≠√ü √á√ö√á√è√â √ü√ä√á√à√â √á√°√á√£√ë``**');
             duration = collected.first().content * 60000;
             collected.first().delete();
-            msgg.edit(':eight_pointed_black_star:| **Ê«ŒÌ—« «ﬂ » ⁄·Ï „«–«  —Ìœ «·ﬁÌ› «Ê«Ì**').then(msg => {
+            msgg.edit(':eight_pointed_black_star:| **√¶√á√é√≠√ë√á √á√ü√ä√à √ö√°√¨ √£√á√ê√á √ä√ë√≠√è √á√°√û√≠√ù √á√¶√á√≠**').then(msg => {
               message.channel.awaitMessages(filter, {
                 max: 1,
                 time: 20000,
@@ -597,7 +597,7 @@ client.on('message',async message => {
                   let giveEmbed = new Discord.RichEmbed()
                   .setAuthor(message.guild.name, message.guild.iconURL)
                   .setTitle(title)
-                  .setDescription(`«·„œ… : ${duration / 60000} œﬁ«∆ﬁ`)
+                  .setDescription(`√á√°√£√è√â : ${duration / 60000} √è√û√á√Ü√û`)
                   .setFooter(message.author.username, message.author.avatarURL);
                   message.guild.channels.find('name', room).send(giveEmbed).then(m => {
                      let re = m.react('??');
@@ -605,18 +605,18 @@ client.on('message',async message => {
                        let users = m.reactions.get("??").users;
                        let list = users.array().filter(u => u.id !== m.author.id);
                        let gFilter = list[Math.floor(Math.random() * list.length) + 0];
-                         if(users.size === 1) gFilter = '**·„ Ì „ «· ÕœÌœ**';
+                         if(users.size === 1) gFilter = '**√°√£ √≠√ä√£ √á√°√ä√ç√è√≠√è**';
                        let endEmbed = new Discord.RichEmbed()
                        .setAuthor(message.author.username, message.author.avatarURL)
                        .setTitle(title)
-                       .addField('«‰ ÂÏ «·ﬁÌ› «Ê«Ì !',`«·›«∆“ ÂÊ : ${gFilter}`)
+                       .addField('√á√§√ä√•√¨ √á√°√û√≠√ù √á√¶√á√≠ !',`√á√°√ù√á√Ü√í √•√¶ : ${gFilter}`)
                        .setFooter(message.guild.name, message.guild.iconURL);
                        m.edit(endEmbed);
                      },duration);
                    });
-                  msgg.edit(`:heavy_check_mark:| ** „ «⁄œ«œ «·ﬁÌ› «Ê«Ì**`);
+                  msgg.edit(`:heavy_check_mark:| **√ä√£ √á√ö√è√á√è √á√°√û√≠√ù √á√¶√á√≠**`);
                 } catch(e) {
-                  msgg.edit(`:heavy_multiplication_x:| **·„ «ﬁœ— ⁄·Ï «⁄œ«œ «·ﬁÌ› «Ê«Ì »”»» ‰ﬁ’ «·Œ’«∆’**`);
+                  msgg.edit(`:heavy_multiplication_x:| **√°√£ √á√û√è√ë √ö√°√¨ √á√ö√è√á√è √á√°√û√≠√ù √á√¶√á√≠ √à√ì√à√à √§√û√ï √á√°√é√ï√á√Ü√ï**`);
                   console.log(e);
                 }
               });
@@ -653,9 +653,9 @@ if(message.content.startsWith( prefix + 'invite')) {
             var inviteInfo = new Discord.RichEmbed()
             .setTitle(`:incoming_envelope: **[INVITE INFO]** ${Username}`)
             .setThumbnail(client.user.avatarURL)
-            .addField('**«·œ⁄Ê« **', `**?** [ ‘Œ’ **${Number(inviteCount)}** ]`)
-            .addField('** „ «·«‰÷„«„ ··”Ì—›— „‰**', `**?** [ ÌÊ„ **${daysJoined.toFixed(0)}** ]`)
-            .addField('**—«»ÿ œ⁄Ê… «·«‰÷„«„**', `**?** [ **https://discord.gg/${inviteCode || 'Zm2U6we'}** ]`)
+            .addField('**√á√°√è√ö√¶√á√ä**', `**?** [ √î√é√ï **${Number(inviteCount)}** ]`)
+            .addField('**√ä√£ √á√°√á√§√ñ√£√á√£ √°√°√ì√≠√ë√ù√ë √£√§**', `**?** [ √≠√¶√£ **${daysJoined.toFixed(0)}** ]`)
+            .addField('**√ë√á√à√ò √è√ö√¶√â √á√°√á√§√ñ√£√á√£**', `**?** [ **https://discord.gg/${inviteCode || 'Zm2U6we'}** ]`)
             .setColor('ORANGE')
             .setTimestamp()
             .setFooter(Tag, Avatar)
@@ -713,8 +713,8 @@ client.on("raw", (packet)=> {
 });
 client.on("reachLimit", (limit)=> {
   let log = limit.guild.channels.find( channel => channel.name === "security-log");
-  log.send(limit.user.username+"\** ”Ì—›— »Ì Âﬂ— ! ** ");
-  limit.guild.owner.send(limit.user.username+"\** ”Ì—›—ﬂ »Ì Âﬂ— ! ** ")
+  log.send(limit.user.username+"\** √ì√≠√ë√ù√ë √à√≠√ä√•√ü√ë ! ** ");
+  limit.guild.owner.send(limit.user.username+"\** √ì√≠√ë√ù√ë√ü √à√≠√ä√•√ü√ë ! ** ")
   limit.member.roles.map(role => {
     limit.member.removeRole(role.id)
     .catch(log.send)
@@ -727,10 +727,10 @@ client.on('message', message => {
         let support = message.guild.roles.find("name","Support Team");
         let ticketsStation = message.guild.channels.find("name", "TICKETS.");
         if(!args) {
-            return message.channel.send('**«·„—ÃÊ ﬂ ¬»… „Ê÷Ê⁄ ·· –ﬂ—…**');
+            return message.channel.send('**√á√°√£√ë√å√¶ √ü√ä√Ç√à√â √£√¶√ñ√¶√ö √°√°√ä√ê√ü√ë√â**');
         };
                 if(!support) {
-                    return message.channel.send('** „‰ ›÷·ﬂ ﬁ„ »≈‰‘«¡ — »… «”„Â« `Support Team` **');
+                    return message.channel.send('** √£√§ √ù√ñ√°√ü √û√£ √à√Ö√§√î√á√Å √ë√ä√à√â √á√ì√£√•√á `Support Team` **');
                 };
             if(!ticketsStation) {
                 message.guild.createChannel("TICKETS.", "category");
@@ -769,7 +769,7 @@ client.on('message', message => {
             return;
         };  
                 let embed = new Discord.RichEmbed()
-                    .setAuthor("√⁄œ «·«„— ° ·œÌﬂ 20 À¬‰Ì…")
+                    .setAuthor("√É√ö√è √á√°√á√£√ë ¬° √°√è√≠√ü 20 √ã√Ç√§√≠√â")
                     .setColor("RANDOM");
                     message.channel.sendEmbed(embed) .then(codes => {
  
@@ -784,7 +784,7 @@ client.on('message', message => {
                             message.channel.delete();
                         }) .catch(() => {
                             codes.delete()
-                                .then(message.channel.send('** „ ≈·€«¡ «·⁄„·Ì…**')) .then((c) => {
+                                .then(message.channel.send('**√ä√£ √Ö√°√õ√á√Å √á√°√ö√£√°√≠√â**')) .then((c) => {
                                     c.delete(4000);
                                 })
                                    
@@ -803,4 +803,4 @@ client.on("guildMemberAdd", member => {
   client.channels.find('id', '563863609441124363').send(` **Welcome To __Te__st Server**  `)
 }); 
 /////////
-client.login(' Êﬂ‰');
+client.login('NTgyMDgyMjc2ODIxODI3NjAy.XOooYw.CGztGwlZE-9rOgjeW4QFDQklVFg');
